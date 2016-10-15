@@ -1,3 +1,17 @@
-<% %w(about menu starters mains grills rice bread sweets gallery).each do |section| %>
-	<%= link_to section.titleize, section %>
-<% end %>
+<div class="ui top fixed menu">
+  <div class="ui container">
+    <% %w(about menu starters mains grills rice bread sweets gallery).each do |section| %>
+      <%= link_to section.titleize, section, class: "item" %>
+    <% end %>
+    <div class="right menu">
+      <div class="ui pointing dropdown link item">
+        <i class="world icon"></i>
+        <span class="text">Language</span>
+        <div class="menu">
+          <%= link_to 'English', class: 'item' %>
+          <%= link_to 'العربية', class: 'item' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
