@@ -1,15 +1,20 @@
 <div class="ui top fixed menu">
   <div class="ui container">
-    <% %w(about menu starters mains grills rice bread sweets gallery).each do |section| %>
-      <%= link_to section.titleize, section, class: "item" %>
-    <% end %>
+    <div class="header item">
+      <%= t(:website) %>
+    </div>
+    <%= link_to(t(:about), about_path, class: "item") %>
+    <%= link_to(t(:menu), menu_path, class: "item") %>
+    <%= link_to(t(:gallery), gallery_path, class: "item") %>
+    <%# link_to t(:contact), contact_path, class: "item" %>
+
     <div class="right menu">
       <div class="ui pointing dropdown link item">
         <i class="world icon"></i>
         <span class="text">Language</span>
         <div class="menu">
-          <%= link_to 'English', class: 'item' %>
-          <%= link_to 'العربية', class: 'item' %>
+          <%= link_to 'English', url_for(locale: 'en'), class: 'item' %>
+          <%= link_to "العربية", url_for(locale: 'ar'), class: 'item' %>
         </div>
       </div>
     </div>

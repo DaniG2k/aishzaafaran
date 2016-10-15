@@ -20,4 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  website: 'Aish & Zaafaran'
+  about: 'About'
+  menu: 'Menu'
+  gallery: 'Gallery'
