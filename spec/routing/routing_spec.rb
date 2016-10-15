@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Routes', :type => :routing do
   describe 'root' do
-    it 'GET / routes to home#index' do
-      expect(:get => '/').to route_to(controller: 'home', action: 'index')
+    it 'GET / routes to home#about' do
+      expect(:get => '/').to route_to(controller: 'home', action: 'about')
     end
   end
 

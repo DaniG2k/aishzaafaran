@@ -1,23 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/about'
-
-  get 'home/menu'
-
-  get 'home/starters'
-
-  get 'home/mains'
-
-  get 'home/grills'
-
-  get 'home/rice'
-
-  get 'home/bread'
-
-  get 'home/sweets'
-
-  get 'home/gallery'
-
-  root 'home#index'
+  root 'home#about'
 
   get :about, to: 'home#about'
   get :menu, to: 'home#menu'
